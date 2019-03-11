@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.kt.mmp.setl.setlCalc.repository.SetlItemInfoMapper">
+
+  <select id="select" resultType="setlItemInfo">
+    SELECT
+      setl_item_cd    AS setlItemCd
+      , efct_fns_dt   AS efctFnsDt
+      , efct_st_dt    AS efctStDt
+      , cretr_id      AS cretrId
+      , cret_pgm_id   AS cretPgmId
+      , cret_dt       AS cretDt
+      , amdr_id       AS amdrId
+      , amd_pgm_id    AS amdPgmId
+      , amd_dt        AS amdDt
+      , setl_item_nm  AS setlItemNm
+      , setl_type_cd  AS setlTypeCd
+      , setl_sperd    AS setlSpred
+      , vat_yn        AS vatYn
+      , dtl_cret_yn   AS dtlCretYn
+    FROM setl_item_info
+  </select>
+
+</mapper>
